@@ -1,258 +1,34 @@
 {
-    "charts": [
-        {
-            "chartType": "donut_chart",
-            "title": "Policy Distribution by Property State",
-            "data": [
-                {
-                    "property_state": "LA",
-                    "policy_count": 45
-                },
-                {
-                    "property_state": "TX",
-                    "policy_count": 1415
-                },
-                {
-                    "property_state": "WA",
-                    "policy_count": 30
-                },
-                {
-                    "property_state": "OK",
-                    "policy_count": 23
-                },
-                {
-                    "property_state": "CA",
-                    "policy_count": 153
-                },
-                {
-                    "property_state": "AZ",
-                    "policy_count": 27
-                },
-                {
-                    "property_state": "NV",
-                    "policy_count": 11
-                },
-                {
-                    "property_state": "UT",
-                    "policy_count": 4
-                },
-                {
-                    "property_state": "NY",
-                    "policy_count": 13
-                },
-                {
-                    "property_state": "IA",
-                    "policy_count": 3
-                },
-                {
-                    "property_state": "ID",
-                    "policy_count": 8
-                },
-                {
-                    "property_state": "VA",
-                    "policy_count": 13
-                },
-                {
-                    "property_state": "SC",
-                    "policy_count": 10
-                },
-                {
-                    "property_state": "OH",
-                    "policy_count": 9
-                },
-                {
-                    "property_state": "FL",
-                    "policy_count": 291
-                },
-                {
-                    "property_state": "MD",
-                    "policy_count": 4
-                },
-                {
-                    "property_state": "AR",
-                    "policy_count": 10
-                },
-                {
-                    "property_state": "TN",
-                    "policy_count": 10
-                },
-                {
-                    "property_state": "NM",
-                    "policy_count": 25
-                },
-                {
-                    "property_state": "NE",
-                    "policy_count": 2
-                },
-                {
-                    "property_state": "MO",
-                    "policy_count": 9
-                },
-                {
-                    "property_state": "PA",
-                    "policy_count": 18
-                },
-                {
-                    "property_state": "AL",
-                    "policy_count": 10
-                },
-                {
-                    "property_state": "MN",
-                    "policy_count": 5
-                },
-                {
-                    "property_state": "MS",
-                    "policy_count": 16
-                },
-                {
-                    "property_state": "MT",
-                    "policy_count": 2
-                },
-                {
-                    "property_state": "IL",
-                    "policy_count": 11
-                },
-                {
-                    "property_state": "CO",
-                    "policy_count": 16
-                },
-                {
-                    "property_state": "ME",
-                    "policy_count": 3
-                },
-                {
-                    "property_state": "IN",
-                    "policy_count": 6
-                },
-                {
-                    "property_state": "NJ",
-                    "policy_count": 8
-                },
-                {
-                    "property_state": "MI",
-                    "policy_count": 4
-                },
-                {
-                    "property_state": "GA",
-                    "policy_count": 19
-                },
-                {
-                    "property_state": "CT",
-                    "policy_count": 7
-                },
-                {
-                    "property_state": "OR",
-                    "policy_count": 7
-                },
-                {
-                    "property_state": "WI",
-                    "policy_count": 3
-                },
-                {
-                    "property_state": "NC",
-                    "policy_count": 6
-                },
-                {
-                    "property_state": "KS",
-                    "policy_count": 4
-                },
-                {
-                    "property_state": "ND",
-                    "policy_count": 1
-                },
-                {
-                    "property_state": "SD",
-                    "policy_count": 2
-                },
-                {
-                    "property_state": "KY",
-                    "policy_count": 3
-                },
-                {
-                    "property_state": "NH",
-                    "policy_count": 1
-                },
-                {
-                    "property_state": "WV",
-                    "policy_count": 1
-                },
-                {
-                    "property_state": "WY",
-                    "policy_count": 1
-                },
-                {
-                    "property_state": "VT",
-                    "policy_count": 1
-                },
-                {
-                    "property_state": "MA",
-                    "policy_count": 1
-                }
-            ],
-            "series": [
-                {
-                    "type": "donut",
-                    "angleKey": "policy_count",
-                    "calloutLabelKey": "property_state",
-                    "innerRadiusRatio": 0.5,
-                    "innerLabels": [
-                        {
-                            "text": "Total Policies",
-                            "fontWeight": "bold",
-                            "fontSize": 16,
-                            "color": "#FFFFFF"
-                        },
-                        {
-                            "text": "0",
-                            "spacing": 4,
-                            "fontSize": 48,
-                            "color": "#FFFFFF"
-                        }
-                    ],
-                    "innerCircle": {
-                        "fill": ""
-                    }
-                }
-            ],
-            "legend": {
-                "text": "Property State",
-                "position": "right",
-                "layout": "vertical",
-                "item": {
-                    "label": {
-                        "color": "black"
-                    }
-                }
-            }
-        },
-        {
-            "chartType": "bar_graph",
-            "title": "Policies by Effective Month",
-            "data": [
-                {
-                    "expiry_month": 7,
-                    "policy_count": 2219
-                },
-                {
-                    "expiry_month": 8,
-                    "policy_count": 52
-                }
-            ],
-            "xAxis": {
-                "title": "Effective Month",
-                "key": "expiry_month"
-            },
-            "yAxis": {
-                "title": "Number of Policies",
-                "key": "policy_count"
-            },
-            "series": [
-                {
-                    "type": "bar",
-                    "dataKey": "policy_count",
-                    "labelKey": "expiry_month"
-                }
-            ]
-        }
-    ]
+ "school_name": "Dunder Miflin",
+ "class": "Year 1",
+ "info": {
+ 	"president": "Michael Scott",
+ 	"address": "Scranton, Pennsylvania",
+ 	"contacts": {
+ 				"email": "admin@e.com",
+ 				"tel": "123456789"
+ 			}
+ },
+ "students": [
+ {
+ "id": "A1",
+ "name": "Jim",
+ "math": 60,
+ "physics": 66,
+ "chemistry": 61
+ },
+ {
+ "id": "A2",
+ "name": "Dwight",
+ "math": 89,
+ "physics": 76,
+ "chemistry": 51
+ },
+ {
+ "id": "A3",
+ "name": "Kevin",
+ "math": 79,
+ "physics": 90,
+ "chemistry": 78
+ }]
 }
